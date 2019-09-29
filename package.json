@@ -1,0 +1,37 @@
+{
+  "name": "raddec-relay-tcp",
+  "homepage": "https://github.com/bgirault-usc/raddec-relay-tcp/",
+  "author": {
+    "name": "Benjamin Girault"
+  },
+  "description": "Relays raddecs to and from remote servers via TCP.",
+  "keywords": [
+    "reelyActive",
+    "raddec",
+    "relay",
+    "TCP"
+  ],
+  "version": "1.0.0",
+  "engines": {
+    "node": ">=6.0.0"
+  },
+  "main": "./lib/raddecrelaytcp.js",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/bgirault-usc/raddec-relay-tcp.git"
+  },
+  "dependencies": {
+    "raddec": ">=0.2.0"
+  },
+  "devDependencies": {},
+  "bugs": {
+    "url": "https://github.com/bgirault-usc/raddec-relay-tcp/issues"
+  },
+  "contributors": [
+    {
+      "name": "Jeffrey Dungen",
+      "name": "Benjamin Girault"
+    }
+  ],
+  "license": "MIT"
+}
