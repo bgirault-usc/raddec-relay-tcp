@@ -101,9 +101,16 @@ __raddec-relay-tcp__ supports the following options:
 | enableForwarding       | true    | Forward raddecs from sources to targets (if both are present) |
 | raddecHandler          | null    | Function to call when source raddec received |
 | tcpServerListeningCallback |     | Function to call when the server (source) TCP port is opened |
+| tcpServerClientConnectedCallback | | |
+| tcpServerConnectionClosedCallback | | |
+| tcpServerSocketErrorCallback | | |
 | tcpServerRaddecErrorCallback | () => {} | Function to call when an invalid raddec is received |
 | tcpClientReadyCallback |         | Function to when the TCP socket to the server (target) to forward raddec to is opened |
-| tcpForwardErrorCallback | () => {} | Function to call when the TCP layer returns an error after sending a raddec |
+| tcpForwardCallback | () => {} | Function to call when the TCP layer finishes sending a raddec |
+| tcpClientSocketError | | |
+| tcpClientConnectionClosed | | |
+| retryTargetTimeout | 1000 | Time (in millisecond) before retrying connecting to a TCP target |
+
 
 
 License
